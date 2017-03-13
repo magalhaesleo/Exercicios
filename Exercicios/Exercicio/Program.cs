@@ -37,9 +37,19 @@ namespace Exercicio
             Console.WriteLine("A temperatura em Fahreinheit e: {0}", F);
 
         }
+        static void Exercicio7()
+        {
+            Console.WriteLine("Digite o salario fixo: ");
+            float salario_fixo = float.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o valor total de vendas: ");
+            float total_vendas = float.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o percentual ganho: ");
+            float percentual_ganho = float.Parse(Console.ReadLine());
+            float salario_total = (salario_fixo + (total_vendas *(percentual_ganho / 100)));            Console.WriteLine("O salario total do vendedor é R$ {0}", salario_total);
+        }
         static void Main(string[] args)
         {
-            Exercicio6();
+            Exercicio7();
         }
         
     }
